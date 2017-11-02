@@ -108,7 +108,32 @@ input::-webkit-search-cancel-button {display: none;}
       font-size: 170%;
     }
   }
+
 /* ----------- 公共部分 ----------- */
+.header {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 1.06rem;
+  color: #394043;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+}
+.button_link_wrapper {
+  margin: 2.65rem;
+  text-align: center;
+}
+.button_ink {
+  display: inline-block;
+  padding: 0.7rem 1.1875rem;
+  color: #fff;
+  border: 0;
+  background:background: -moz-linear-gradient(left, #ff8a00, #ff5300);
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-linear-gradient(left, #ff8a00, #ff5300);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #ff8a00, #ff5300);
+}
 .common-nav {
   width: 100%;
   height: 4.375rem;
@@ -271,6 +296,45 @@ input::-webkit-search-cancel-button {display: none;}
   background: url(../images/home-header-bg.png) no-repeat;
   background-size: 100% 100%;
 }
+  
+/* ----------- 业务 ----------- */
+
+.business {
+  padding: 2.5rem 2.7rem
+}
+
+.business h1{
+  font-size: 1.12rem;
+  color: #394043;
+  text-align: center;
+}
+
+.business p {
+  color: #9c9fa1;
+  font-size: 0.9375rem;
+  padding: 1.6875rem 1.3125rem;
+  border-bottom: 1px solid #e4e6f0;
+}
+
+/* ----------- 付款方式 ----------- */
+
+.pay div.list_wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.pay div.list_wrapper a{
+  display: flex;
+  flex: 0 0 50%;
+  overflow: hidden;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+
+
+
 
 
 
