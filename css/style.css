@@ -110,6 +110,11 @@ input::-webkit-search-cancel-button {display: none;}
   }
 
 /* ----------- 公共部分 ----------- */
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 4.375rem;
+}
 .header {
   height: 3.5rem;
   line-height: 3.5rem;
@@ -154,17 +159,60 @@ input::-webkit-search-cancel-button {display: none;}
   width: 100%;
   height: 100%;
   color: #687072;
+  font-size: .9275rem;
+  line-height: 7rem;
   text-align: center;
+  position: relative;
+}
+.common-nav .nav-item.home a i {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1rem;
+  top: .65rem;
+  background: url(../images/nav-home.png) no-repeat;
+  background-size: 2rem 2rem;
+}
+.common-nav .nav-item.business-i a i {
+  display: block;
+  width: 1.8125rem;
+  height: 1.8125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -.9rem;
+  top: .75rem;
+  background: url(../images/nav-business.png) no-repeat;
+  background-size: 1.8125rem 1.8125rem;
+}
+.common-nav .nav-item.order a i {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1rem;
+  top: .65rem;
+  background: url(../images/nav-order.png) no-repeat;
+  background-size: 2rem 2rem;
+}
+.common-nav .nav-item.center a i {
+  display: block;
+  width: 2rem;
+  height: 1.9375rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -1rem;
+  top: .75rem;
+  background: url(../images/nav-center.png) no-repeat;
+  background-size: 2rem 1.9375rem;
 }
 .common-nav .nav-item.on a {
   color: #ff5000
 }
 
 /* ----------- 首页 ----------- */
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-}
 .home-header {
   position: relative;
 }
@@ -295,6 +343,135 @@ input::-webkit-search-cancel-button {display: none;}
   z-index: 9;
   background: url(../images/home-header-bg.png) no-repeat;
   background-size: 100% 100%;
+}
+.home-content {
+  padding: 1rem;
+}
+.home-content .home-content-title {
+  width: 100%;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
+  font-size: 1.5rem;
+  color: #394043;
+  position: relative;
+}
+.home-content .home-content-title .question-btn {
+  padding-right: 1.4rem;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
+  color: #f4792a;
+  font-size: .9375rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.home-content .home-content-title .question-btn:after {
+  content: '';
+  display: block;
+  width: .78125rem;
+  height: .84375rem;
+  position: absolute;
+  right: .3125rem;
+  top: 50%;
+  margin-top: -.421875rem;
+  background: url(../images/question-icon.png) no-repeat;
+  background-size: .78125rem .84375rem;
+}
+.home-content .home-content-nav {
+  width: 100%;
+  height: 3.4375rem;
+  border-top: 1px solid #9c9fa1;
+  background: url(../images/home-content-nav.png) repeat-x;
+}
+.home-content-nav .content-nav-item {
+  width: 25%;
+  float: left;
+  height: 3.4375rem;
+  padding: .5625rem 0;
+}
+.home-content-nav .content-nav-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-right: 1px dotted #9b9fa1;
+  color: #676c6e;
+  font-size: .625rem;
+  line-height: 4.2rem;
+  text-align: center;
+  position: relative;
+}
+.home-content-nav .content-nav-item.house a i {
+  display: block;
+  width: 1.4375rem;
+  height: 1.125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -.71875rem;
+  top: .25rem;
+  background: url(../images/home-nav-house.png) no-repeat;
+  background-size: 1.4375rem 1.125rem;
+}
+.home-content-nav .content-nav-item.couple a i {
+  display: block;
+  width: 1.71875rem;
+  height: 1.3125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -.86rem;
+  top: .125rem;
+  background: url(../images/home-nav-couple.png) no-repeat;
+  background-size: 1.71875rem 1.3125rem;
+}
+.home-content-nav .content-nav-item.inherit a i {
+  display: block;
+  width: 1.1875rem;
+  height: 1.4rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -.594rem;
+  top: .125rem;
+  background: url(../images/home-nav-inherit.png) no-repeat;
+  background-size: 1.1875rem 1.4rem;
+}
+.home-content-nav .content-nav-item.more a i {
+  display: block;
+  width: 1.375rem;
+  height: 1.1rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -.6875rem;
+  top: .25rem;
+  background: url(../images/home-nav-more.png) no-repeat;
+  background-size: 1.375rem 1.1rem;
+}
+.home-content-nav .content-nav-item.current a {
+  color: #394043
+}
+.home-content-nav .content-nav-item:last-child a {
+  border-right: none;
+}
+.home-content-list li {
+  padding: .9375rem .3125rem;
+  border-bottom: 1px solid #e3e4e5;
+}
+.home-content-list li p {
+  color: #394043;
+  font-size: .9375rem;
+  line-height: 1.25rem;
+}
+.home-content-list li p i {
+  padding: .125rem .5rem;
+  font-size: .625rem;
+  border-radius: .25rem;
+  margin-right: .5rem;
+}
+.home-content-list li p i.inherit {
+  background-color: #f5f5f5;
+  color: #666;
+}
+.home-content-list li p i.entrust {
+  background-color: #fff2d3;
+  color: #f4792a;
 }
   
 /* ----------- 业务 ----------- */
