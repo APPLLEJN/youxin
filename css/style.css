@@ -109,47 +109,6 @@ input::-webkit-search-cancel-button {display: none;}
     }
   }
 
-  /*common*/
-  .header {
-    height: 3.5rem;
-    line-height: 3.5rem;
-    text-align: center;
-    font-size: 1.06rem;
-    color: #394043;
-    background: #f9f9f9;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-  }
-
-  .header a {
-    color: #394043;
-    padding: 0 1rem;
-  }
-
-  .header a.on {
-    color: #ff8300;
-    border-bottom: 2px solid #ff8300
-  }
-
-  .button_link_wrapper {
-    margin: 2.65rem;
-    text-align: center;
-  }
-
-  .button_link_wrapper .button_link {
-    display: inline-block;
-    padding: 0.7rem 1.1875rem;
-    color: #fff;
-    border: 0;
-    background:background: -moz-linear-gradient(left, #ff8a00, #ff5300);
-    /* Safari 5.1+, Chrome 10+ */
-    background: -webkit-linear-gradient(left, #ff8a00, #ff5300);
-    /* Opera 11.10+ */
-    background: -o-linear-gradient(left, #ff8a00, #ff5300);
-  }
-
-
 /* ----------- 公共部分 ----------- */
 .wrapper {
   width: 100%;
@@ -164,12 +123,26 @@ input::-webkit-search-cancel-button {display: none;}
   color: #394043;
   background: #f9f9f9;
   border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
 }
+
+.header a {
+  color: #394043;
+  padding: 0 1rem;
+}
+
+.header a.on {
+  color: #ff8300;
+  border-bottom: 2px solid #ff8300
+}
+
 .button_link_wrapper {
   margin: 2.65rem;
   text-align: center;
 }
-.button_ink {
+
+.button_link_wrapper .button_link {
   display: inline-block;
   padding: 0.7rem 1.1875rem;
   color: #fff;
@@ -587,7 +560,7 @@ input::-webkit-search-cancel-button {display: none;}
 }
 
 
-/*order*/
+/* ----------- 订单 ----------- */
 .order_list, .me_list{
   margin: 1rem 0;
   border-top: 1px solid #e3e4e5
@@ -635,7 +608,7 @@ input::-webkit-search-cancel-button {display: none;}
   transform: rotate(-45deg);
 }
 
-/*me*/
+/* ----------- 我 ----------- */
 .me_wrapper {
 
 }
@@ -662,22 +635,27 @@ input::-webkit-search-cancel-button {display: none;}
 }
 
 .me_info .avatar_wrapper span {
-    position: absolute;
-    padding: 0.25rem 1rem;
-    border-radius: 0.5rem; 
-    color: #fff;
+  position: absolute;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem; 
+  color: #fff;
+  z-index: 9;
 }
 
 .me_info .avatar_wrapper span.local {
-  background: rgba(224,126,30,0.5);
+  background: rgba(135,207,118,.9);
+  border: 1px solid #62cd9e;
+  padding-right: 3rem;
   bottom: 1rem;
   left: 0rem;
 }
 
 .me_info .avatar_wrapper span.man {
-  background: rgba(135,207,118,0.5);
+  background: #f47e1e;
+  border: 1px solid #f77715;
   top: 1rem;
-  right: 0rem
+  right: 0rem;
+  padding-left: 3rem;
 } 
 
 .me_info .avatar {
@@ -687,6 +665,10 @@ input::-webkit-search-cancel-button {display: none;}
   background: red;
   border-radius: 50%;
   border: 0.5rem solid #f8be92;
+  -webkit-box-shadow: 0.125rem 0.125rem 0.5rem 0 rgba(0,0,0,.2);
+          box-shadow: 0.125rem 0.125rem 0.5rem 0 rgba(0,0,0,.2);
+  position: relative;
+  z-index: 999;
 }
 
 .me_info p.name {
@@ -732,6 +714,143 @@ input::-webkit-search-cancel-button {display: none;}
   margin-top: 0.5rem;
   border-top: 1px solid #e3e4e5;
 }
+
+/* ----------- 房屋买卖 ----------- */
+.trade-list {
+
+}
+.trade-list li {
+  padding: 1.25rem 1rem;
+  background-color: #fff;
+}
+.trade-list li .progress-wrap {
+  width: 100%;
+  height: 1.5rem;
+  position: relative;
+}
+.progress-wrap .step-1 {
+  width: 4.3rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.progress-wrap .step-2 {
+  height: 1.5rem;
+  margin:  0 4.3rem;
+  position: relative;
+}
+.progress-wrap .step-3 {
+  width: 4.3rem;
+  height: 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.progress-wrap .line {
+  width: 100%;
+  position: absolute;
+  height: .25rem;
+  left: 0;
+  top: 50%;
+  margin-top: -.125rem;
+  background-color: #9c9fa1;
+}
+.progress-wrap .step-1 .line {
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.progress-wrap .step-3 .line {
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.progress-wrap .circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-top: -.75rem;
+  background-color: #9c9fa1;
+  font-size: .9375rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+.progress-wrap .step-1 .circle {
+  right: 0;
+}
+.progress-wrap .step-2 .circle {
+  left: 50%;
+  margin-left: -.75rem;
+}
+.progress-wrap .step-3 .circle {
+  left: 0;
+}
+.progress-wrap .green .line {
+  background-color: #87cf76!important;
+}
+.progress-wrap .green .circle {
+  background-color: #87cf76!important;
+}
+.progress-wrap .orange .line {
+  background-color: #ff8300!important;
+}
+.progress-wrap .orange .circle {
+  background-color: #ff8300!important;
+}
+.trade-list li .progress-name {
+  width: 100%;
+}
+.trade-list li .progress-name .step-name {
+  width: 33.33%;
+  float: left;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: .75rem;
+  text-align: center;
+  color: #9c9fa1;
+}
+.trade-list li .progress-name .step-name.green {
+  color: #87cf76!important;
+}
+.trade-list li .progress-name .step-name.orange {
+  color: #ff8300!important;
+}
+.trade-list li .progress-info {
+  width: 100%;
+}
+.trade-list li .progress-info .step-info {
+  width: 33.33%;
+  float: left;
+}
+.trade-list li .progress-info .step-info p {
+  line-height: 1rem;
+  font-size: .6875rem;
+  color: #9c9fa1;
+  text-align: center;
+}
+.trade-list li .progress-info .step-info p a {
+  text-decoration: underline;
+  color: #004d80;
+}
+
+.trade-detail-btn {
+  position: fixed;
+  width: 3.125rem;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  background-color: rgba(255, 88, 0, .6);
+  border-radius: #ff5800;
+  font-size: .9375rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  bottom: 5.375rem;
+  right: 1rem;
+}
+
+
 
 
 
