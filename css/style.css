@@ -225,6 +225,22 @@ input::-webkit-search-cancel-button {display: none;}
 .common-nav .nav-item.on a {
   color: #ff5000
 }
+.common-nav .nav-item.on.home a i {
+  background: url(../images/nav-home-current.png) no-repeat;
+  background-size: 2rem 2rem;
+}
+.common-nav .nav-item.on.business-i a i {
+  background: url(../images/nav-business-current.png) no-repeat;
+  background-size: 1.8125rem 1.8125rem;
+}
+.common-nav .nav-item.on.order a i {
+  background: url(../images/nav-order-current.png) no-repeat;
+  background-size: 2rem 2rem;
+}
+.common-nav .nav-item.on.center a i {
+  background: url(../images/nav-center-current.png) no-repeat;
+  background-size: 2rem 1.9375rem;
+}
 
 /* ----------- 首页 ----------- */
 .home-header {
@@ -360,6 +376,7 @@ input::-webkit-search-cancel-button {display: none;}
 }
 .home-content {
   padding: 1rem;
+  background: #fff;
 }
 .home-content .home-content-title {
   width: 100%;
@@ -368,8 +385,9 @@ input::-webkit-search-cancel-button {display: none;}
   font-size: 1.5rem;
   color: #394043;
   position: relative;
+  border-bottom: 1px solid #9c9fa1;
 }
-.home-content .home-content-title .question-btn {
+/*.home-content .home-content-title .question-btn {
   padding-right: 1.4rem;
   height: 2.8125rem;
   line-height: 2.8125rem;
@@ -390,6 +408,28 @@ input::-webkit-search-cancel-button {display: none;}
   margin-top: -.421875rem;
   background: url(../images/question-icon.png) no-repeat;
   background-size: .78125rem .84375rem;
+}*/
+.home-content .home-content-title .question-btn {
+  padding-right: .8rem;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
+  color: #f4792a;
+  font-size: .9375rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.home-content .home-content-title .question-btn:after {
+  content: '';
+  display: block;
+  width: .9rem;
+  height: 1rem;
+  position: absolute;
+  right: -.5rem;
+  top: 50%;
+  margin-top: -.6rem;
+  background: url(../images/question-new-icon.png) no-repeat;
+  background-size: .9rem 1rem;
 }
 .home-content .home-content-nav {
   width: 100%;
