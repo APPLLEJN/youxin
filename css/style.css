@@ -126,6 +126,27 @@ input::-webkit-search-cancel-button {display: none;}
   display: flex;
   justify-content: center;
 }
+.header i {
+  display: block;
+  width: 3.75rem;
+  height: 3.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.header i:after {
+  content: '';
+  display: block;
+  width: .65rem;
+  height: 1.156rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -.325rem;
+  margin-top: -.578rem;
+  background: url(../images/arrow_left_icon.png) no-repeat;
+  background-size: .65rem 1.156rem;
+}
 
 .header a {
   color: #394043;
@@ -927,16 +948,16 @@ input::-webkit-search-cancel-button {display: none;}
 
 
 .fix_footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #f1f1f1;
-    padding: 0.7rem 1.2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #d8d8d8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f1f1f1;
+  padding: 0.7rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d8d8d8;
 }
 
 .fix_footer div {
@@ -946,10 +967,13 @@ input::-webkit-search-cancel-button {display: none;}
 }
 
 .fix_footer .avatar {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    margin-right: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.fix_footer .footer_name {
+  font-size: 1.125rem;
 }
 
 
