@@ -976,5 +976,236 @@ input::-webkit-search-cancel-button {display: none;}
   font-size: 1.125rem;
 }
 
+/* ----------- 我的收藏 ----------- */
+.collect-content {
+  border-top: 1px solid #d8d8d8;
+  margin: 1.25rem 0;
+  background: #fff;
+  padding: 0 1rem;
+}
+.collect-content-list {
+  padding-bottom: 1rem;
+}
+.collect-content-list li {
+  padding: .9375rem 0;
+  border-bottom: 1px solid #e3e4e5;
+  position: relative;
+}
+.collect-content-list li p {
+  color: #394043;
+  font-size: .9375rem;
+  line-height: 1.25rem;
+}
+.collect-content-list li p i {
+  padding: .125rem .5rem;
+  font-size: .625rem;
+  border-radius: .25rem;
+  margin-right: .5rem;
+}
+.collect-content-list li p i.inherit {
+  background-color: #f5f5f5;
+  color: #666;
+}
+.collect-content-list li p i.entrust {
+  background-color: #fff2d3;
+  color: #f4792a;
+}
+.collect-content-list li .list-bottom {
+  position: absolute;
+  right: .25rem;
+  bottom: .45rem;
+}
+.collect-content-list li .list-bottom .like-btn {
+  display: block;
+  float: left;
+  padding-left: .85rem;
+  height: .6875rem;
+  line-height: .6875rem;
+  font-size: .6875rem;
+  color: #687072;
+  background: url(../images/like-icon.png) no-repeat;
+  background-size: .6875rem .6875rem;
+  margin-right: .75rem;
+}
+.collect-content-list li .list-bottom .comment-btn {
+  display: block;
+  float: left;
+  padding-left: .85rem;
+  height: .6875rem;
+  line-height: .6875rem;
+  font-size: .6875rem;
+  color: #687072;
+  background: url(../images/comment-icon.png) no-repeat;
+  background-size: .6875rem .6875rem;
+}
+
+/* ----------- 房产知识 ----------- */
+.knowledge-header {
+  padding: .875rem;
+}
+.knowledge-header .search-area {
+  width: 100%;
+  height: 2.1875rem;
+  background-color: #fff;
+  border-radius: .5rem;
+  z-index: 10;
+  -webkit-box-shadow: 0.125rem 0.1rem 0.5rem 0.2rem rgba(0,0,0,.2);
+          box-shadow: 0.125rem 0.1rem 0.5rem 0.2rem rgba(0,0,0,.2);
+}
+
+.knowledge-header .search-area .search-right {
+  padding: .5rem 0;
+  height: 100%;
+}
+.knowledge-header .search-area .search-right .search-right-input {
+  width: 100%;
+  height: 100%;
+  padding: 0 .8125rem 0 2.5rem;
+  position: relative;
+}
+.knowledge-header .search-area .search-right .search-right-input input {
+  height: 1.1825rem;
+  line-height: 1.1825rem;
+  font-size: .75rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.knowledge-header .search-area .search-right .search-right-input:after {
+  content: '';
+  display: block;
+  width: .78125rem;
+  height: .78125rem;
+  position: absolute;
+  left: .8125rem;
+  top: 50%;
+  margin-top: -.39rem;
+  background: url(../images/search-icon.png) no-repeat;
+  background-size: .78125rem .78125rem;
+}
+.knowledge-link {
+  padding: 0 .875rem;
+}
+.knowledge-link a {
+  display: block;
+  width: 10.47rem;
+  height: 5.53rem;
+  border-radius: .25rem;
+  overflow: hidden;
+}
+.knowledge-link a.left-link {
+  float: left;
+}
+.knowledge-link a.right-link {
+  float: right;
+}
+.knowledge-link a img {
+  width: 10.47rem;
+  height: 5.53rem;
+}
+.knowledge-content {
+  margin-top: 1rem;
+  border-top: 1px solid #e3e4e5;
+  background-color: #fff;
+}
+.knowledge-content .knowledge-content-nav {
+  padding: .5rem 0;
+}
+.knowledge-content .knowledge-content-nav span {
+  float: left;
+  display: block;
+  width: 50%;
+  height: 2.125rem;
+  color: #b4b4b4;
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 2.125rem;
+}
+.knowledge-content .knowledge-content-nav span.current {
+  color: #394043;
+  font-size: 1.25rem;
+}
+.knowledge-content .knowledge-content-nav span:first-child {
+  border-right: 1px solid #e3e4e5;
+}
+.knowledge-content-list {
+  margin: 0 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #e3e4e5;
+}
+.knowledge-content-list li {
+  padding: .9375rem 0;
+  border-bottom: 1px solid #e3e4e5;
+  position: relative;
+}
+.knowledge-content-list li p {
+  color: #394043;
+  font-size: .9375rem;
+  line-height: 1.25rem;
+}
+.knowledge-content-list li p i {
+  padding: .125rem .5rem;
+  font-size: .625rem;
+  border-radius: .25rem;
+  margin-right: .5rem;
+}
+.knowledge-content-list li p i.inherit {
+  background-color: #f5f5f5;
+  color: #666;
+}
+.knowledge-content-list li p i.entrust {
+  background-color: #fff2d3;
+  color: #f4792a;
+}
+.knowledge-content-list li .list-bottom {
+  position: absolute;
+  right: .25rem;
+  bottom: .45rem;
+}
+.knowledge-content-list li .list-bottom .like-btn {
+  display: block;
+  float: left;
+  padding-left: .85rem;
+  height: .6875rem;
+  line-height: .6875rem;
+  font-size: .6875rem;
+  color: #687072;
+  background: url(../images/like-icon.png) no-repeat;
+  background-size: .6875rem .6875rem;
+  margin-right: .75rem;
+}
+.knowledge-content-list li .list-bottom .comment-btn {
+  display: block;
+  float: left;
+  padding-left: .85rem;
+  height: .6875rem;
+  line-height: .6875rem;
+  font-size: .6875rem;
+  color: #687072;
+  background: url(../images/comment-icon.png) no-repeat;
+  background-size: .6875rem .6875rem;
+}
+.question-btn {
+  position: fixed;
+  width: 2.97rem;
+  height: 2.97rem;
+  line-height: 2.97rem;
+  border-radius: 50%;
+  bottom: 6.25rem;
+  right: 1.125rem;
+  border: 3px solid #fff;
+  color: #fff;
+  background-color: rgba(255,88,0,.6);
+  text-align: center;
+  font-size: .9375rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba(0,0,0,.2);
+          box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba(0,0,0,.2);
+}
+
+
+
+
+
+
 
 
