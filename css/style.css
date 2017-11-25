@@ -119,7 +119,7 @@ input::-webkit-search-cancel-button {display: none;}
   height: 3.5rem;
   line-height: 3.5rem;
   text-align: center;
-  font-size: 1.06rem;
+  font-size: 1.5rem;
   color: #394043;
   background: #f9f9f9;
   border-bottom: 1px solid #ccc;
@@ -569,12 +569,16 @@ input::-webkit-search-cancel-button {display: none;}
 }
 
 /* ----------- 付款方式 ----------- */
+.pay {
+  min-height: 100%;
+  background-color: #fff;
+}
 
 .pay div.list_wrapper ul{
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
-  padding: 0.8rem
+  padding: 1rem 0.8rem
 }
 
 .pay div.list_wrapper ul li{
@@ -582,10 +586,10 @@ input::-webkit-search-cancel-button {display: none;}
   display: flex;
   flex:0 0 50%;
   align-items: center;
-  margin: 10px 0;
+  margin: 0 0 20px;
 } 
 .pay div.list_wrapper a {
-  margin: 10px 5px;
+  margin: 10px 7px;
   width: 100%;
   height: 100%;
   background: #f9f9f9;
@@ -593,27 +597,48 @@ input::-webkit-search-cancel-button {display: none;}
   color: #394043;
   line-height: 5.5rem;
   padding-left: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .pay div.list_wrapper a.all {
-  background: url(../images/all_money.png) no-repeat 70px center #f9f9f9; 
+  background: url(../images/all_money.png) no-repeat 4.375rem center #f9f9f9; 
   background-size: 6.5rem;
 
 }
 
 .pay div.list_wrapper a.gjj {
-  background: url(../images/gjj_money.png) no-repeat 80px center #f9f9f9; 
+  background: url(../images/gjj_money.png) no-repeat 5.2rem center #f9f9f9; 
   background-size: 6.5rem;
 }
 
 .pay div.list_wrapper a.sy {
-  background: url(../images/sy_money.png) no-repeat 92px center #f9f9f9; 
+  background: url(../images/sy_money.png) no-repeat 5.75rem center #f9f9f9; 
   background-size: 6.5rem;
 }
 
 .pay div.list_wrapper a.zh {
-  background: url(../images/zh_money.png) no-repeat 78px center #f9f9f9; 
+  background: url(../images/zh_money.png) no-repeat 4.875rem center #f9f9f9; 
   background-size: 6.5rem;
+}
+
+.pay div.list_wrapper a.fqgm {
+  background: url(../images/fqgm_money.png) no-repeat 6.375rem .5rem #f9f9f9; 
+  background-size: 4.125rem;
+}
+.pay div.list_wrapper a.ycjc {
+  background: url(../images/ycjc_money.png) no-repeat 5.75rem .2rem #f9f9f9; 
+  background-size: 4.4375rem;
+}
+.pay div.list_wrapper a.fwzy {
+  background: url(../images/fwzy_money.png) no-repeat 6.375rem .3rem #f9f9f9; 
+  background-size: 3.84rem;
+}
+.pay div.list_wrapper a.bgdj {
+  background: url(../images/bgdj_money.png) no-repeat 6.375rem .3rem #f9f9f9; 
+  background-size: 3.84rem;
+}
+.pay div.list_wrapper a.dydj {
+  background: url(../images/dydj_money.png) no-repeat 5.375rem .6rem #f9f9f9; 
+  background-size: 5.0625rem;
 }
 
 .pay div.list_wrapper a img{
@@ -1216,9 +1241,10 @@ input::-webkit-search-cancel-button {display: none;}
 }
 
 .publish_wrapper .title_wrapper input, .publish_wrapper textarea{
-    display: block;
-    width: 100%;
-    padding: 1rem 1rem 2.5rem;
+  display: block;
+  width: 100%;
+  padding: 1rem 1rem 2.5rem;
+  font-size: .9375rem;
 }
 
 .publish_wrapper .title_wrapper .number {
@@ -1237,9 +1263,17 @@ input::-webkit-search-cancel-button {display: none;}
     align-items: center;
 }
 
-.publish_wrapper .button_wrapper .button_link{
-    width: 6rem;
+.publish_wrapper .button_wrapper .submit-btn{
+    width: 6.25rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: #fff;
     text-align: center;
+    font-size: 1.0625rem;
+    border: 0;
+    background: background: -moz-linear-gradient(left, #ff8a00, #ff5300);
+    background: -webkit-linear-gradient(left, #ff8a00, #ff5300);
+    background: -o-linear-gradient(left, #ff8a00, #ff5300);
 }
 
 /*问题详情*/
@@ -1251,7 +1285,8 @@ input::-webkit-search-cancel-button {display: none;}
 
 .question_detail_wrapper .title_wrapper h1 {
   font-size: 0.9rem;
-  color: #394043
+  color: #394043;
+  line-height: 1.3rem;
 }
 
 .question_detail_wrapper .title_wrapper p {
@@ -1265,6 +1300,7 @@ input::-webkit-search-cancel-button {display: none;}
 .question_detail_wrapper .title_wrapper span{
   float: right;
   color: #687072;
+  font-size: .6875rem;
 }
 
 .question_detail_wrapper .question_handle {
@@ -1280,6 +1316,8 @@ input::-webkit-search-cancel-button {display: none;}
   justify-content: space-between;
   align-items: center;
   border-right: 1px solid #e3e4e5;
+  color: #687072;
+  font-size: .6875rem;
 }
 
 .question_detail_wrapper .question_handle li:last-child{
@@ -1332,6 +1370,10 @@ input::-webkit-search-cancel-button {display: none;}
 .question_detail_wrapper .list_wrapper .like-btn {
   float: right;
   margin-top: 0.5rem;
+}
+.question_detail_wrapper .list_wrapper .like-btn.on {
+  background: url(../images/like.png) no-repeat;
+  background-size: .6875rem .6875rem;
 }
 
 .question_detail_wrapper .list_wrapper .handle_wrapper {
